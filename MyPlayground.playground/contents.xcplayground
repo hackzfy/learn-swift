@@ -3,5 +3,6 @@
     <pages>
         <page name='Basic'/>
         <page name='Basic2'/>
+        <page name='ClassInitialization'/>
     </pages>
 </playground>
