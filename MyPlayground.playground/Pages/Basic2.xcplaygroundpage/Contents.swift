@@ -49,8 +49,35 @@ class Square: NamedShape {
 
 var square = Square(sideLength: 10.3)
 
+/**
+ getter and setter
+ */
+class EquilateralTriangle: NamedShape {
+    var sideLength: Double = 0.0
+    
+    init(sideLength: Double, name: String) {
+        self.sideLength = sideLength
+        super.init(name: name)
+        numberOfSides = 3
+    }
+    // getter and setter
+    var perimeter: Double {
+        get {
+            return 3.0 * sideLength
+        }
+        set {
+            // newValue is the newly set value
+            sideLength = newValue / 3.0
+        }
+    }
+}
 
+var triangle = EquilateralTriangle(sideLength: 3.1, name: "a triangle")
 
+print(triangle.perimeter) // 9.3
+
+triangle.perimeter = 9.9
+print(triangle.sideLength) // 3.3
 
 
 
