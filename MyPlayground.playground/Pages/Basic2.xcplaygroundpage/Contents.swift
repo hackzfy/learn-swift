@@ -106,5 +106,15 @@ let willAndDid = WillAndDid(name: "test");
 willAndDid.name = "done"
 
 
+/**
+ optional values
+ 
+ */
+// declare the optional type
+let optionalSquare: Square? = Square(sideLength: 2.0)
+// read the prop of the optional type, optional expressions always returns optional values.
+// that is some value or nil.
+let sideLength = optionalSquare?.sideLength
+
 //: [Next](@next)
 
