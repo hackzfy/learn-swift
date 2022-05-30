@@ -128,11 +128,29 @@ case "cucumber", "watercress":
     // amazing!
 case let x where x.hasSuffix("pepper"):
     print("Is it a spicy \(x)?")
-    // must add the default case
+    // must add the default case, to include all cases.
+    // But sometimes you don't have to, if the cases above already includes all situations.
 default:
     print("Everything tastes good in soup")
 }
 
+enum Suit {
+    case spades, hearts, diamonds, clubs
+
+    func simpleDescription() -> String {
+        switch self {
+        case .spades:
+            return "spades"
+        case .hearts:
+            return "hearts"
+        case .diamonds:
+            return "diamonds"
+        case .clubs:
+            return "clubs"
+        // you don't have to write the default, cases above already include all situations.
+        }
+    }
+}
 
 /**
  for in
