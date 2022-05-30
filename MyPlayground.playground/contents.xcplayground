@@ -4,5 +4,10 @@
         <page name='Basic'/>
         <page name='Basic2'/>
         <page name='ClassInitialization'/>
+        <page name='Enums'/>
+        <page name='Structs'/>
+        <page name='Protocols'/>
+        <page name='ErrorHandling'/>
+        <page name='Generics'/>
     </pages>
 </playground>
